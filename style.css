@@ -1,0 +1,38 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #0D3941;
+  text-align: center;
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  color: white;
+}
+.confucius {
+  background-color: #2A464B;
+  width: 24%;
+  text-align: center;
+}
+
+.fortune-cookie {
+  background-color: #295A64;
+  width: 24%;
+  text-align: center;
+}
+
+.nostradamus {
+  background-color:#1c7585;
+  width: 24%;
+  text-align: center;
+}
+
+.magic {
+  background-color:#4FB0C2;
+  width: 24%;
+  text-align: center;
+}
