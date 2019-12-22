@@ -1,6 +1,15 @@
 var sayings = document.querySelector('.sayings');
+var confuciusSaying = document.querySelector('.confucius');
+var cookieSaying = document.querySelector('.fortune-cookie');
+var nostradamusSaying = document.querySelector('.nostradamus');
+var magicSaying = document.querySelector('.magic')
 
-sayings.addEventListener('click', toggleMessage);
+// sayings.addEventListener('click', toggleMessage);
+confuciusSaying.addEventListener('click', toggleMessage);
+cookieSaying.addEventListener('click', toggleMessage);
+nostradamusSaying.addEventListener('click', toggleMessage);
+magicSaying.addEventListener('click', toggleMessage);
+
 
 // function retrieveFortune() {
 //   var clickBar = document.querySelectorAll('.bar');
@@ -16,6 +25,13 @@ sayings.addEventListener('click', toggleMessage);
 
 function toggleMessage () {
   var messageId = event.target.getAttribute('data-id');
-  var message = document.querySelector(`.${messageId}`);
-  message.style.display = message.style.display === 'none' ? '' : 'block';
+  var cssSelector = `.sayings > p.${messageId}`;
+
+  var messageToHide = document.querySelector('.sayings p.active');
+  if(messageToHide){
+    messageToHide.classList.remove('active');
+  }
+
+  var messageToShow = document.querySelector(cssSelector);
+  messageToShow.classList.add('active');
 }

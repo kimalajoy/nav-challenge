@@ -52,13 +52,17 @@ nav {
   text-align: center;
 }
 
-.sayings.active {
-  display: inline-block;
+.sayings > p {
+  display: none;
   flex-direction: row;
   width: 24%;
   color: white;
 }
 
-.sayings {
-  display: none;
+.sayings > p.active{
+  display: block;
+}
+
+.sayings  .confucius{
+  color: red;
 }
